@@ -1,0 +1,5 @@
+[flake8]
+max-line-length = 100
+# E203/W503 conflict with black's formatting; E402 allowed for lazy/late imports.
+extend-ignore = E203, W503, E402
+exclude = .venv, __pycache__, .git

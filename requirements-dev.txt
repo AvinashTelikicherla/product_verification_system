@@ -1,0 +1,12 @@
+# Development tooling — code formatting, linting, and dead-code detection.
+# Installs the runtime requirements too, so this is all you need for a dev setup:
+#
+#     pip install -r requirements-dev.txt
+#
+-r requirements.txt
+
+black==24.*
+isort==5.*
+flake8==7.*
+pylint==3.*
+vulture==2.*

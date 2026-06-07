@@ -1,0 +1,30 @@
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.pylint.main]
+py-version = "3.11"
+
+[tool.pylint."messages control"]
+# Disabled checks that fight the deliberate style of this codebase
+# (self-documenting CRUD methods, small single-purpose classes, lazy imports).
+disable = [
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "too-few-public-methods",
+    "import-outside-toplevel",
+    "broad-exception-caught",
+    "duplicate-code",
+]
+
+[tool.pylint.format]
+max-line-length = 100
+
+[tool.vulture]
+min_confidence = 80
+paths = ["src"]

@@ -1,0 +1,26 @@
+# Web framework
+fastapi>=0.111,<1.0
+uvicorn[standard]>=0.30,<1.0
+python-multipart>=0.0.9
+
+# Dependency injection
+dependency-injector>=4.41
+
+# Data / validation
+pydantic>=2.7,<3.0
+pydantic-settings>=2.2,<3.0
+email-validator>=2.1
+
+# Database (async)
+SQLAlchemy[asyncio]>=2.0,<2.1
+aiosqlite>=0.20
+
+# Auth
+python-jose[cryptography]>=3.3
+bcrypt>=4.1
+
+# Optional: AI image analysis (used only if Azure OpenAI credentials are set)
+openai>=1.40
+
+# Optional: PostgreSQL async driver (used only if DATABASE_URL points to Postgres)
+asyncpg>=0.29
